@@ -2,6 +2,9 @@
   "name": "careercompass",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20"
+  },
 
   "dependencies": {
     "@dhiwise/component-tagger": "^1.0.14",
