@@ -1,15 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Icon from '../AppIcon';
 import Button from '../ui/Button';
 
 const ResultsNavigationPanel = ({ 
+  activeTab = 'overview',
   onTabChange = () => {},
   onExport = () => {},
   onShare = () => {},
   onCompare = () => {}
 }) => {
-  const [activeTab, setActiveTab] = useState('overview');
-
   const tabs = [
     { id: 'overview', label: 'Overview', icon: 'LayoutDashboard' },
     { id: 'personality', label: 'Personality', icon: 'User' },
@@ -19,7 +18,6 @@ const ResultsNavigationPanel = ({
   ];
 
   const handleTabClick = (tabId) => {
-    setActiveTab(tabId);
     onTabChange(tabId);
   };
 

@@ -124,7 +124,7 @@ const LoginForm = () => {
         />
         <button
           type="button"
-          onClick={() => navigate('/forgot-password')}
+          onClick={() => window.alert('Password reset is not available yet. Please contact support to regain access.')}
           className="text-sm text-primary"
         >
           Forgot Password?

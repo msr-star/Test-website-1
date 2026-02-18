@@ -13,7 +13,7 @@ function Image({
       alt={alt}
       className={className}
       onError={(e) => {
-        e.target.src = "/assets/images/no_image.png"
+        e.target.src = "https://via.placeholder.com/400x300?text=No+Image";
       }}
       {...props}
     />

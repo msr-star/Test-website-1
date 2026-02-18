@@ -297,10 +297,12 @@ const AssessmentResults = () => {
       <Header />
       
       <ResultsNavigationPanel
+        activeTab={activeTab}
         onTabChange={handleTabChange}
         onExport={handleExport}
         onShare={handleShare}
-        onCompare={handleCompare} />
+        onCompare={handleCompare}
+      />
 
 
       <main className="bg-background min-h-screen">
